@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/syntax.js            */
+/*    serrano/diffusion/talk/pliss26/part1/primer/syntax.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Sat May 17 13:44:28 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 16:27:37 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -105,7 +105,7 @@ a:after {
 }
 
 .math {
-   font-family: cms;
+   font-family: cmsy;
    font-size: 85%;
    color: var(--greyverydark);
 }

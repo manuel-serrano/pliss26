@@ -1,12 +1,12 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/pliss23.hop.mjs                   */
+/*    serrano/diffusion/talk/pliss26/pliss26.hop.mjs                   */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 12:03:19 2016                          */
-/*    Last change :  Sat May 17 08:24:10 2025 (serrano)                */
-/*    Copyright   :  2016-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 16:23:11 2026 (serrano)                */
+/*    Copyright   :  2016-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
-/*    PLISS23 presentation                                             */
+/*    PLISS26 presentation                                             */
 /*=====================================================================*/
 "use hopscript";
 
@@ -28,9 +28,9 @@ const R = {
 };
 
 /*---------------------------------------------------------------------*/
-/*    pliss23 ...                                                      */
+/*    pliss26 ...                                                      */
 /*---------------------------------------------------------------------*/
-service pliss23(o) {
+service pliss26(o) {
    const s = slides(slideWidth, slideHeight);
 
    const host = "192.168.141.69"
@@ -60,7 +60,7 @@ service pliss23(o) {
         import { qrcode } from "qrcode.mjs";
      </script>
 
-     <impress.cover title=${name} src=${pliss23slides}>
+     <impress.cover title=${name} src=${pliss26slides}>
        <ol>
 	 ${ impress.slideNodes(s)
 	    .map( function( x, idx=undefined, arr=undefined ) {
@@ -81,17 +81,17 @@ service pliss23(o) {
 }
 
 /*---------------------------------------------------------------------*/
-/*    pliss23slides ...                                                */
+/*    pliss26slides ...                                                */
 /*---------------------------------------------------------------------*/
-service pliss23slides(o) {
+service pliss26slides(o) {
    var width = o && "width" in o ? o.width : slideWidth;
    var height = o && "height" in o ? o.height : slideHeight;
    
    return <html>
      <head css=${[fontifier.css,
 		  impress.css,
-		  pliss23.resource("pliss23.hss"),
-		  pliss23.resource("chapter.hss")]}
+		  pliss26.resource("pliss26.hss"),
+		  pliss26.resource("chapter.hss")]}
            idiom="scheme"
            include="hop-canvas"
            script=${[hopconfig.schemeRuntime, impress.jscript]}/>
@@ -165,5 +165,5 @@ import { part1 } from "./part1/part1.js";
 import { part2 } from "./part2/part2.js";
 import { benchmark } from "./benchmark/benchmark.js";
 
-console.log(`"http://localhost:${hop.port}/hop/pliss23" ready...`);
+console.log(`"http://localhost:${hop.port}/hop/pliss26" ready...`);
 console.log(`"http://localhost:${hop.port}/hop/hopimpress/remote" ready...`);

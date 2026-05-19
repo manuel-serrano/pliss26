@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    .../diffusion/talk/pliss23/part1/primer/implementations.js       */
+/*    .../diffusion/talk/pliss26/part1/primer/implementations.js       */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:48:18 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 16:39:10 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -27,7 +27,7 @@ Implementations
    * Guile [https://www.gnu.org/software/guile](https://www.gnu.org/software/guile/)
    * Racket [https://racket-lang.org](https://racket-lang.org)
    * Gambit [http://gambitscheme.org](http://gambitscheme.org/)
-   * Bigloo [http://www-sop.inria.fr/indes/fp/Bigloo](http://www-sop.inria.fr/indes/fp/Bigloo/)
+   * Bigloo [https://www-sop.inria.fr/indes/fp/Bigloo](http://www-sop.inria.fr/indes/fp/Bigloo/)
    * ...
 </MD>   
 </impress.slide>

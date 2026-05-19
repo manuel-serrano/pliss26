@@ -1,12 +1,12 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/title.js                          */
+/*    serrano/diffusion/talk/pliss26/title.js                          */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu Aug 24 09:49:18 2023 (serrano)                */
-/*    Copyright   :  2015-23 Manuel Serrano                            */
+/*    Last change :  Thu Aug 24 09:49:18 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
-/*    Pliss23 title                                                    */
+/*    Pliss26 title                                                    */
 /*=====================================================================*/
 "use hopscript";
 
@@ -51,8 +51,8 @@ export const title = <impress.slide title="title" onslideenter=~{rm("partZoomTop
 	   </div>
  	 </div>
 	 <div class="title-block-bl">
-           <span class="title-conf">PLISS&#39;23 - BERTINORO</span>
-           <div class="title-url"><tt>https://github.com/manuel-serrano/pliss23.git</tt></div>
+           <span class="title-conf">PLISS&#39;26 - BERTINORO</span>
+           <div class="title-url"><tt>https://github.com/manuel-serrano/pliss26.git</tt></div>
 	 </div>
        </td>
        <td class="author">
@@ -62,7 +62,7 @@ export const title = <impress.slide title="title" onslideenter=~{rm("partZoomTop
 	   </div>
 	   <div class="title-block-br">
 	     <span class="title-logo">
-	       <svg:img height="2ex" width="2em" src=${inriaSVG}/>
+	       
 	     </span>
 	     <span class="title-author">Manuel Serrano</span>
 	   </div>
@@ -180,7 +180,7 @@ div.author img {
    color: black;
    font-size: 50%;
    text-align: right;
-   font-family: KaffeesatzLight;
+   font-family: Kaffeesatz;
    width: calc(var(--slideWidth) / 2);
    height: 3ex;
    text-align: center;
@@ -191,7 +191,6 @@ div.author img {
 
 .title-author {
    color: var(--greyverydark);
-   font-weight: bold;
    width: var(--slideWidth);
    z-index: 10;
 }
@@ -211,6 +210,7 @@ div.author img {
    background-color: var(--inria);
    width: 3em;
    display: inline-block;
+   visibility: hidden;
    height: 2ex;
    font-size: 90%;
    position: relative;
