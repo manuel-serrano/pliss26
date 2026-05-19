@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/like.js              */
+/*    serrano/diffusion/talk/pliss26/part1/primer/like.js              */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:49:59 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:38:35 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -28,7 +28,7 @@ export const slide = <impress.slide title="Like" class="md">
    * minimalist core language
    * beauty of the core concepts
    * clean semantics
-   * untypedness
+   * _untypedness_
 
 <span step="5"/>
 </MD>   
@@ -51,7 +51,7 @@ slide.css = <style>
 
 p {
    margin: 0;
-   margin-top: 2ex;
+   margin-bottom: 1ex;
 }
 
 ul {
@@ -59,7 +59,7 @@ ul {
    margin: 2ex;
    list-style: none;
    margin-top: 0;
-   font-size: 90%;
+   font-size: 80%;
 }
 
 li {

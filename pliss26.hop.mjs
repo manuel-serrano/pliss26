@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 12:03:19 2016                          */
-/*    Last change :  Tue May 19 16:23:11 2026 (serrano)                */
+/*    Last change :  Tue May 19 16:51:13 2026 (serrano)                */
 /*    Copyright   :  2016-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    PLISS26 presentation                                             */
@@ -86,7 +86,7 @@ service pliss26(o) {
 service pliss26slides(o) {
    var width = o && "width" in o ? o.width : slideWidth;
    var height = o && "height" in o ? o.height : slideHeight;
-   
+
    return <html>
      <head css=${[fontifier.css,
 		  impress.css,

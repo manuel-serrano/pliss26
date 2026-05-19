@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/primer.js            */
+/*    serrano/diffusion/talk/pliss26/part1/primer/primer.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 10:08:53 2023                          */
-/*    Last change :  Wed Sep  6 08:08:31 2023 (serrano)                */
-/*    Copyright   :  2023 Manuel Serrano                               */
+/*    Last change :  Tue May 19 17:24:08 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Scheme primer                                                    */
 /*=====================================================================*/
@@ -21,6 +21,7 @@ import { slide as beauty } from "./beauty.js";
 import { slide as sugar } from "./sugar.js";
 import { slide as apply } from "./apply.js";
 import { slide as dsl } from "./dsl.js";
+import { slide as wasm } from "./wasm.js";
 import { slide as macro } from "./macro.js";
 import { slide as like } from "./like.js";
 
@@ -32,5 +33,5 @@ export const primer = [
       Primer
    </chapter>,
    implementations, syntax, church, expression, beauty, sugar, apply,
-   dsl, macro, like
+   dsl, wasm, macro, like
 ];

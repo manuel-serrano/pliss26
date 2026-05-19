@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/pliss23.hss                       */
+/*    serrano/diffusion/talk/pliss26/pliss26.hss                       */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:41:22 2015                          */
-/*    Last change :  Sat May 17 13:42:19 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:11:06 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    PLISS'23 presentation CSS                                        */
 /*=====================================================================*/
@@ -23,6 +23,7 @@
 /*---------------------------------------------------------------------*/
 body {
     background-color: var(--background);
+    color: var(--greyverydark);
 }
 
 /*---------------------------------------------------------------------*/

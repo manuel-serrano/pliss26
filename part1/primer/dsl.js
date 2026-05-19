@@ -1,12 +1,12 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/dsl.js               */
+/*    serrano/diffusion/talk/pliss26/part1/primer/dsl.js               */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:49:39 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:22:36 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
-/*    Pliss23, part 1 title                                            */
+/*    Pliss26, part 1 dsl                                              */
 /*=====================================================================*/
 "use hopscript";
 
@@ -58,6 +58,8 @@ div[data-step="1"] {
 
 pre {
    font-size: 50%;
+   margin-left: 2em;
+   background-color: white;
 }
 
 p {

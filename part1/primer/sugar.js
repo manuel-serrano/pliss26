@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/sugar.js             */
+/*    serrano/diffusion/talk/pliss26/part1/primer/sugar.js             */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:49:11 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:17:26 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -29,7 +29,7 @@ export const slide = <impress.slide title="Syntactic sugar" class="md">
 ```scheme
 ((lambda (tmp) (+ tmp tmp)) (* 3 4))
 ;; (tmp => tmp + tmp)(3 * 4);
-==>
+&rarr;
 (let ((tmp (* 3 4))) (+ tmp tmp))
 ;; { let tmp = 3 * 4; tmp + tmp; }
 ```
@@ -37,7 +37,7 @@ export const slide = <impress.slide title="Syntactic sugar" class="md">
 ```scheme
 ((lambda (_) (print "end")) (print "begin"))
 ;; (_ -> console.log("end"))(console.log("begin"));
-==>
+&rarr;
 (begin (print "begin") (print "end"))
 ;; (console.log("begin"), console.log("end"));
 ```
@@ -46,7 +46,7 @@ export const slide = <impress.slide title="Syntactic sugar" class="md">
 ```scheme
 (define f (lambda (tmp) (+ tmp tmp)))
 ;; let f = tmp => tmp + tmp;
-==>
+&rarr;
 (define (f tmp) (+ tmp tmp))
 ;; function f(tmp) { return tmp + tmp };
 ```
@@ -61,14 +61,14 @@ export const slide = <impress.slide title="Syntactic sugar" class="md">
 ;; } else {
 ;;    console.log(z);
 ;; }
-==>
+&rarr;
 (cond
    (x (print "x"))
    (y (print "y"))
    (else (print "z"))
 ```
 
-<span step="1"/>
+<span step="2"/>
 </MD>   
 </impress.slide>
 
@@ -82,11 +82,17 @@ slide.css = <style>
 }
 
 div[data-step="1"] {
-   top: -19ex;
+   top: -3ex;
+}
+
+div[data-step="2"] {
+   top: -21ex;
 }
 
 pre {
    font-size: 50%;
+   margin-left: 2em;
+   background-color: white;
 }
 
 p {

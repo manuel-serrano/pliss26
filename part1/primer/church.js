@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/church.js            */
+/*    serrano/diffusion/talk/pliss26/part1/primer/church.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:48:38 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:13:12 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 slide                                            */
 /*=====================================================================*/
@@ -103,7 +103,6 @@ a:after {
 }
 
 .math {
-   font-family: cmsy;
    font-size: 85%;
    color: var(--greyverydark);
 }

@@ -1,52 +1,51 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss26/part1/primer/apply.js             */
+/*    serrano/diffusion/talk/pliss26/part1/primer/wasm.js              */
 /*    -------------------------------------------------------------    */
-/*    Author      :  Manuel Serrano                                    */
-/*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:21:44 2026 (serrano)                */
-/*    Copyright   :  2015-26 Manuel Serrano                            */
+/*    Author      :  manuel serrano                                    */
+/*    Creation    :  Tue May 19 17:24:42 2026                          */
+/*    Last change :  Tue May 19 17:36:40 2026 (serrano)                */
+/*    Copyright   :  2026 manuel serrano                               */
 /*    -------------------------------------------------------------    */
-/*    Pliss23, part 1 title                                            */
+/*    wasm                                                             */
 /*=====================================================================*/
-"use hopscript";
 
 /*---------------------------------------------------------------------*/
 /*    import/export ...                                                */
 /*---------------------------------------------------------------------*/
 import * as impress from "@hop/hopimpress";
-import { MARKDOWN as MD } from "@hop/markdown";
 import * as fontifier from "@hop/fontifier";
+import { MARKDOWN as MD } from "@hop/markdown";
 
 /*---------------------------------------------------------------------*/
 /*    A slide ...                                                      */
 /*---------------------------------------------------------------------*/
-export const slide = <impress.slide title="Apply" class="md">
-   <MD fontifier=${fontifier}>
-   ${<div class="center">Function invocations</div>}
+export const slide = <impress.slide title="Wasm" class="md">
+<MD fontifier=${fontifier}>
+   ${<div class="center">A perfect fit for Wasm</div>}
 
-
-   * uncurry
+  * A Wasm file 
 ```scheme
-(let ((f (lambda (x y z) (+ x y z))))
-   (f 1 2 3))
-;; { let f = (x, y, z) => x + y + z;
-;;   f(1, 2, 3); }
+;; file.wat
+(func $fact (param $x i64) (result i64)
+   (if (i64.lt_s (local.get $x) (i64.const 2))
+       (then (return (i64.const 1)))
+       (else (return (i64.mul (local.get $x)
+          (call $fact (i64.sub (local.get $x) (i64.const 1))))))))
 ```
-   * apply
-```scheme
-(let ((f (lambda (x y z) (+ x y z))))
-   (apply f (list 1 2 3)))
-;; { let f = (x, y, z) => x + y + z;
-;;   f.apply(undefined, new Array(1, 2, 3)); }
 
-(let ((f (lambda (x y z) (+ x y z))))
-   (apply f '(1 2 3)))
-;; { let f = (x, y, z) => x + y + z;
-;;   f.apply(undefined, [1, 2, 3]); } // ! heap allocation
+  * An analyzer
+```scheme
+(define (search x)
+   (when (pair? x)
+      (if (eq? (car x) 'local.get)
+          x
+          (or (search (car x)) (search (cdr x))))))
+
+(search (read "file.wat"))
 ```
-</MD>   
+
+</MD>
 </impress.slide>
-
 /*---------------------------------------------------------------------*/
 /*    style                                                            */
 /*---------------------------------------------------------------------*/
@@ -133,5 +132,15 @@ code {
    color: var(--javascript-color);
    font-style: normal;
 }
-      
+
+.dollar:before {
+   content: "$";
+}
+
+h2 {
+   font-size: 80%;
+   color: var(--greydark);
+   margin-left: 1em;
+   margin-bottom: 0;
+}
 </style>   

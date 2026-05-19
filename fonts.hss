@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:41:22 2015                          */
-/*    Last change :  Tue May 19 16:34:09 2026 (serrano)                */
+/*    Last change :  Tue May 19 16:56:15 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Fonts declarations                                               */
@@ -41,22 +41,22 @@ $(define-hss-function (url-font local remote)
 
 @font-face {
   font-family: 'cmmi';
-  src: url( "fonts/CM/cmmi10.ttf" );
+  src: url("fonts/CM/cmmi10.ttf");
 }
 
 @font-face {
   font-family: 'cmr';
-  src: url( "fonts/CM/cmr10.ttf" );
+  src: url("fonts/CM/cmr10.ttf");
 }
 
 @font-face {
-  font-family: 'cmsy';
-  src: url( "fonts/CM/cmsy8.ttf" );
+  font-family: cmsy;
+  src: url('fonts/CM/cmsy10.ttf');
 }
 
 @font-face {
   font-family: 'cmtt';
-  src: url( "fonts/CM/cmtt10.ttf" );
+  src: url("fonts/CM/cmtt10.ttf");
 }
 
 @font-face {
@@ -64,7 +64,6 @@ $(define-hss-function (url-font local remote)
   font-style: normal;
   font-weight: normal;
   src: url('fonts/YanoneKaffeesatz/YanoneKaffeesatz-Regular.otf');
-     url('http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLbvy90DtE_Pg_qiF9bHvTzw.ttf');
 }
 
 @font-face {

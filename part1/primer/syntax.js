@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 16:27:37 2026 (serrano)                */
+/*    Last change :  Tue May 19 17:06:52 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -24,7 +24,7 @@ export const slide = <impress.slide title="Syntax" class="md">
 A weird syntax (but it is only syntax)
 ======================================
 
-${<div class="center">As close as possible to the untyped ${<span>&lambda;</span>}-calculus</div>}
+${<div class="center">Close to the untyped ${<span>&lambda;</span>}-calculus</div>}
 
    * abstraction: ${<span class="math">&lambda;x.M</span>}
       * `(lambda (x) M)`
@@ -44,6 +44,10 @@ ${<div class="center">As close as possible to the untyped ${<span>&lambda;</span
 slide.css = <style>
 .body {
    font-size: 80%;
+}
+
+p {
+   display: none;
 }
 
 h2 {
@@ -105,7 +109,6 @@ a:after {
 }
 
 .math {
-   font-family: cmsy;
    font-size: 85%;
    color: var(--greyverydark);
 }
