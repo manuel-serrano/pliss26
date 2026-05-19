@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/fx.js                 */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/fx.js                 */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:52 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:57:41 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -50,6 +50,8 @@ slide.css = <style>
 
 pre {
    font-size: 50%;
+   padding: 8px;
+   background-color: white;
 }
 
 p {

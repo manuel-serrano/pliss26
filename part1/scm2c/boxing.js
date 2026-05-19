@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/boxing.js             */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/boxing.js             */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:14 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:48:35 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -22,7 +22,7 @@ import * as fontifier from "@hop/fontifier";
 /*---------------------------------------------------------------------*/
 export const slide = <impress.slide title="Unifrom Representation: Boxing" class="md">
    <MD fontifier=${fontifier}>
-   ${<div class="center">Boxing</div>}
+   ${<div class="center">Boxing (aka, all values are pointers)</div>}
 
 
 ```c
@@ -70,7 +70,9 @@ code {
 }
 
 pre {
-   font-size: 30%;
+   font-size: 28%;
+   background-color: white;
+   padding: 8px;
 }
 
 p {

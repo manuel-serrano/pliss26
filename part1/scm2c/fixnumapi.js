@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/fixnumapi.js          */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/fixnumapi.js          */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Fri Aug 25 10:49:46 2023 (serrano)                */
-/*    Copyright   :  2015-23 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:56:17 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -65,6 +65,8 @@ code {
 
 pre {
    font-size: 40%;
+   background-color: white;
+   padding: 8px;
 }
 
 p {

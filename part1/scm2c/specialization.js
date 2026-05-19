@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/specialization.js     */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/specialization.js     */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:43 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:53:33 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -27,7 +27,7 @@ export const slide = <impress.slide title="Specialization" class="md">
    * unsafe, unbounded arithmetic
    * `+`, `+fx`, `+bx`, `+fl`, ..., `-`, `-fx`, `-bx`, `-fl`, ...
    * use C macros to avoid function calls
-   * use tagging
+   * use tagging (_vs boxing_)
 
 <span step="4"/>
 </MD>   
@@ -50,13 +50,13 @@ code {
    font-size: 80%;
 }
 
-   .center {
+.center {
    font-weight: bold;
+   margin-bottom: 1ex;
 }
 
 p {
    margin: 0;
-   margin-top: 2ex;
 }
 
 ul {

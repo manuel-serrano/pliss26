@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/fixnum.js             */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/fixnum.js             */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:25 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:50:32 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, Scheme compilation                                      */
 /*=====================================================================*/
@@ -30,7 +30,7 @@ export const slide = <impress.slide title="Fixnums" class="md">
 #define FXVAL(n) n->val.fixnum
 
 obj_t makefx(long n) {
-  obj_t num = GC_MALLOC(sizeof(struct box));
+  obj_t num = GC_MALLOC(sizeof(struct obj));
   num->header = FIXNUM;
   num->val.fixnum = n;
   return num;
@@ -65,6 +65,8 @@ slide.css = <style>
 
 pre {
    font-size: 30%;
+   background-color: white;
+   padding: 8px;
 }
 
 p {

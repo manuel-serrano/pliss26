@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/slowfixnum.js         */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/slowfixnum.js         */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:34 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:52:12 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -46,11 +46,11 @@ slide.css = <style>
 
 .center {
    font-weight: bold;
+   margin-bottom: 1ex;
 }
 
 p {
    margin: 0;
-   margin-top: 2ex;
 }
 
 ul {

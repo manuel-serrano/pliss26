@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/polymorphism.js       */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/polymorphism.js       */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:51:03 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:43:40 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -123,14 +123,14 @@ code {
 [data-step="1"] li { opacity: 1;}
 [data-step="1"] li + li { opacity: 0; }
 
-[data-step="2"] li { opacity: 1; text-decoration: line-through; }
-[data-step="2"] li + li { opacity: 1; text-decoration: none; }
+[data-step="2"] li > code { opacity: 1; text-decoration: line-through; }
+[data-step="2"] li + li > code { opacity: 1; text-decoration: none; }
 [data-step="2"] li + li + li { opacity: 0; }
 
-[data-step="3"] li { opacity: 1; text-decoration: line-through; }
-[data-step="3"] li + li { opacity: 1; text-decoration: line-through; }
-[data-step="3"] li + li + li { opacity: 1; text-decoration: none; }
+[data-step="3"] li > code { opacity: 1; text-decoration: line-through; }
+[data-step="3"] li + li > code { opacity: 1; text-decoration: line-through; }
+[data-step="3"] li + li + li > code { opacity: 1; text-decoration: none; }
 [data-step="3"] li + li + li + li { opacity: 0; }
 
-[data-step="4"] li { opacity: 1; text-decoration: line-through; }
+[data-step="4"] li > code { opacity: 1; text-decoration: line-through; }
 </style>   

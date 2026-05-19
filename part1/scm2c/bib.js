@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/bib.js                */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/bib.js                */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:52:00 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Tue May 19 17:58:35 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -26,7 +26,8 @@ export const slide = <impress.slide title="Bibliography" class="md">
 
    * ${<span class="ref">POPL&rsquo;91</span>} Unboxed Objects and Polymorphic Typing. X. Leroy
    * ${<span class="ref">ICFP&rsquo;96</span>} Storage Use Analysis, M. Serrano & M. Feeley
-   * Julia, ask Jan
+   * ${<span class="ref">OOPSLA&rsquo;25</span>} Float Self Tagging, O. Melancon & M. Serrano & M. Feeley
+   * Julia, ask Jan...
 </MD>   
 </impress.slide>
 
@@ -43,11 +44,11 @@ slide.css = <style>
 
 .center {
    font-weight: bold;
+   margin-bottom: 2ex;
 }
 
 p {
    margin: 0;
-   margin-top: 2ex;
 }
 
 ul {
