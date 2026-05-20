@@ -23,7 +23,7 @@
 // more like a JavaScript program.
 "use strict";
 
-/**
+/*
  * A JavaScript implementation of the DeltaBlue constraint-solving
  * algorithm, as described in:
  *
@@ -40,9 +40,7 @@
 
 
 /* --- O b j e c t   M o d e l --- */
-
 Object.defineProperty(Object.prototype, "inheritsFrom", {
-  
   value: function (shuper) {
     function Inheriter() { }
     Inheriter.prototype = shuper.prototype;
@@ -90,7 +88,7 @@ OrderedCollection.prototype.remove = function (elm) {
  * S t r e n g t h
  * --- */
 
-/**
+/*
  * Strengths are used to measure the relative importance of constraints.
  * New strengths may be inserted in the strength hierarchy without
  * disrupting current constraints.  Strengths cannot be created outside
@@ -129,7 +127,7 @@ Strength.prototype.nextWeaker = function () {
 }
 
 // Strength constants.
-#evil-deltablue2@evil-pattern#Strength.REQUIRED        = new Strength(0, "required");#/evil-deltablue2@evil-pattern#
+Strength.REQUIRED        = new Strength(0, "required");
 Strength.STONG_PREFERRED = new Strength(1, "strongPreferred");
 Strength.PREFERRED       = new Strength(2, "preferred");
 Strength.STRONG_DEFAULT  = new Strength(3, "strongDefault");
@@ -141,7 +139,7 @@ Strength.WEAKEST         = new Strength(6, "weakest");
  * C o n s t r a i n t
  * --- */
 
-/**
+/*
  * An abstract class representing a system-maintainable relationship
  * (or "constraint") between a set of variables. A constraint supplies
  * a strength instance variable; concrete subclasses provide a means
@@ -152,7 +150,7 @@ function Constraint(strength) {
   this.strength = strength;
 }
 
-/**
+/*
  * Activate this constraint and attempt to satisfy it.
  */
 Constraint.prototype.addConstraint = function () {
@@ -160,7 +158,7 @@ Constraint.prototype.addConstraint = function () {
   planner.incrementalAdd(this);
 }
 
-/**
+/*
  * Attempt to find a way to enforce this constraint. If successful,
  * record the solution, perhaps modifying the current dataflow
  * graph. Answer the constraint that this constraint overrides, if
@@ -190,7 +188,7 @@ Constraint.prototype.destroyConstraint = function () {
   else this.removeFromGraph();
 }
 
-/**
+/*
  * Normal constraints are not input constraints.  An input constraint
  * is one that depends on external state, such as the mouse, the
  * keybord, a clock, or some arbitraty piece of imperative code.
@@ -203,7 +201,7 @@ Constraint.prototype.isInput = function () {
  * U n a r y   C o n s t r a i n t
  * --- */
 
-/**
+/*
  * Abstract superclass for constraints having a single possible output
  * variable.
  */
@@ -216,7 +214,7 @@ function UnaryConstraint(v, strength) {
 
 UnaryConstraint.inheritsFrom(Constraint);
 
-/**
+/*
  * Adds this constraint to the constraint graph
  */
 UnaryConstraint.prototype.addToGraph = function () {
@@ -224,7 +222,7 @@ UnaryConstraint.prototype.addToGraph = function () {
   this.satisfied = false;
 }
 
-/**
+/*
  * Decides if this constraint can be satisfied and records that
  * decision.
  */
@@ -233,7 +231,7 @@ UnaryConstraint.prototype.chooseMethod = function (mark) {
     && Strength.stronger(this.strength, this.myOutput.walkStrength);
 }
 
-/**
+/*
  * Returns true if this constraint is satisfied in the current solution.
  */
 UnaryConstraint.prototype.isSatisfied = function () {
@@ -244,14 +242,14 @@ UnaryConstraint.prototype.markInputs = function (mark) {
   // has no inputs
 }
 
-/**
+/*
  * Returns the current output variable.
  */
 UnaryConstraint.prototype.output = function () {
   return this.myOutput;
 }
 
-/**
+/*
  * Calculate the walkabout strength, the stay flag, and, if it is
  * 'stay', the value for the current output of this constraint. Assume
  * this constraint is satisfied.
@@ -262,7 +260,7 @@ UnaryConstraint.prototype.recalculate = function () {
   if (this.myOutput.stay) this.execute(); // Stay optimization
 }
 
-/**
+/*
  * Records that this constraint is unsatisfied
  */
 UnaryConstraint.prototype.markUnsatisfied = function () {
@@ -282,7 +280,7 @@ UnaryConstraint.prototype.removeFromGraph = function () {
  * S t a y   C o n s t r a i n t
  * --- */
 
-/**
+/*
  * Variables that should, with some level of preference, stay the same.
  * Planners may exploit the fact that instances, if satisfied, will not
  * change their output during plan execution.  This is called "stay
@@ -302,7 +300,7 @@ StayConstraint.prototype.execute = function () {
  * E d i t   C o n s t r a i n t
  * --- */
 
-/**
+/*
  * A unary input constraint used to mark a variable that the client
  * wishes to change.
  */
@@ -312,7 +310,7 @@ function EditConstraint(v, str) {
 
 EditConstraint.inheritsFrom(UnaryConstraint);
 
-/**
+/*
  * Edits indicate that a variable is to be changed by imperative code.
  */
 EditConstraint.prototype.isInput = function () {
@@ -332,7 +330,7 @@ Direction.NONE     = 0;
 Direction.FORWARD  = 1;
 Direction.BACKWARD = -1;
 
-/**
+/*
  * Abstract superclass for constraints having two possible output
  * variables.
  */
@@ -346,7 +344,7 @@ function BinaryConstraint(var1, var2, strength) {
 
 BinaryConstraint.inheritsFrom(Constraint);
 
-/**
+/*
  * Decides if this constraint can be satisfied and which way it
  * should flow based on the relative strength of the variables related,
  * and record that decision.
@@ -373,7 +371,7 @@ BinaryConstraint.prototype.chooseMethod = function (mark) {
   }
 }
 
-/**
+/*
  * Add this constraint to the constraint graph
  */
 BinaryConstraint.prototype.addToGraph = function () {
@@ -382,35 +380,35 @@ BinaryConstraint.prototype.addToGraph = function () {
   this.direction = Direction.NONE;
 }
 
-/**
+/*
  * Answer true if this constraint is satisfied in the current solution.
  */
 BinaryConstraint.prototype.isSatisfied = function () {
   return this.direction != Direction.NONE;
 }
 
-/**
+/*
  * Mark the input variable with the given mark.
  */
 BinaryConstraint.prototype.markInputs = function (mark) {
   this.input().mark = mark;
 }
 
-/**
+/*
  * Returns the current input variable
  */
 BinaryConstraint.prototype.input = function () {
   return (this.direction == Direction.FORWARD) ? this.v1 : this.v2;
 }
 
-/**
+/*
  * Returns the current output variable
  */
 BinaryConstraint.prototype.output = function () {
   return (this.direction == Direction.FORWARD) ? this.v2 : this.v1;
 }
 
-/**
+/*
  * Calculate the walkabout strength, the stay flag, and, if it is
  * 'stay', the value for the current output of this
  * constraint. Assume this constraint is satisfied.
@@ -422,7 +420,7 @@ BinaryConstraint.prototype.recalculate = function () {
   if (out.stay) this.execute();
 }
 
-/**
+/*
  * Record the fact that this constraint is unsatisfied.
  */
 BinaryConstraint.prototype.markUnsatisfied = function () {
@@ -444,7 +442,7 @@ BinaryConstraint.prototype.removeFromGraph = function () {
  * S c a l e   C o n s t r a i n t
  * --- */
 
-/**
+/*
  * Relates two variables by the linear scaling relationship: "v2 =
  * (v1 * scale) + offset". Either v1 or v2 may be changed to maintain
  * this relationship but the scale factor and offset are considered
@@ -459,7 +457,7 @@ function ScaleConstraint(src, scale, offset, dest, strength) {
 
 ScaleConstraint.inheritsFrom(BinaryConstraint);
 
-/**
+/*
  * Adds this constraint to the constraint graph.
  */
 ScaleConstraint.prototype.addToGraph = function () {
@@ -479,7 +477,7 @@ ScaleConstraint.prototype.markInputs = function (mark) {
   this.scale.mark = this.offset.mark = mark;
 }
 
-/**
+/*
  * Enforce this constraint. Assume that it is satisfied.
  */
 ScaleConstraint.prototype.execute = function () {
@@ -490,7 +488,7 @@ ScaleConstraint.prototype.execute = function () {
   }
 }
 
-/**
+/*
  * Calculate the walkabout strength, the stay flag, and, if it is
  * 'stay', the value for the current output of this constraint. Assume
  * this constraint is satisfied.
@@ -506,7 +504,7 @@ ScaleConstraint.prototype.recalculate = function () {
  * E q u a l i t  y   C o n s t r a i n t
  * --- */
 
-/**
+/*
  * Constrains two variables to have the same value.
  */
 function EqualityConstraint(var1, var2, strength) {
@@ -515,7 +513,7 @@ function EqualityConstraint(var1, var2, strength) {
 
 EqualityConstraint.inheritsFrom(BinaryConstraint);
 
-/**
+/*
  * Enforce this constraint. Assume that it is satisfied.
  */
 EqualityConstraint.prototype.execute = function () {
@@ -526,7 +524,7 @@ EqualityConstraint.prototype.execute = function () {
  * V a r i a b l e
  * --- */
 
-/**
+/*
  * A constrained variable. In addition to its value, it maintain the
  * structure of the constraint graph, the current dataflow graph, and
  * various parameters of interest to the DeltaBlue incremental
@@ -542,7 +540,7 @@ function Variable(name, initialValue) {
   this.name = name;
 }
 
-/**
+/*
  * Add the given constraint to the set of all constraints that refer
  * this variable.
  */
@@ -550,7 +548,7 @@ Variable.prototype.addConstraint = function (c) {
   this.constraints.add(c);
 }
 
-/**
+/*
  * Removes all traces of c from this variable.
  */
 Variable.prototype.removeConstraint = function (c) {
@@ -562,14 +560,14 @@ Variable.prototype.removeConstraint = function (c) {
  * P l a n n e r
  * --- */
 
-/**
+/*
  * The DeltaBlue planner
  */
 function Planner() {
   this.currentMark = 0;
 }
 
-/**
+/*
  * Attempt to satisfy the given constraint and, if successful,
  * incrementally update the dataflow graph.  Details: If satifying
  * the constraint is successful, it may override a weaker constraint
@@ -590,7 +588,7 @@ Planner.prototype.incrementalAdd = function (c) {
     overridden = overridden.satisfy(mark);
 }
 
-/**
+/*
  * Entry point for retracting a constraint. Remove the given
  * constraint and incrementally update the dataflow graph.
  * Details: Retracting the given constraint may allow some currently
@@ -617,14 +615,14 @@ Planner.prototype.incrementalRemove = function (c) {
   } while (strength != Strength.WEAKEST);
 }
 
-/**
+/*
  * Select a previously unused mark value.
  */
 Planner.prototype.newMark = function () {
   return ++this.currentMark;
 }
 
-/**
+/*
  * Extract a plan for resatisfaction starting from the given source
  * constraints, usually a set of input constraints. This method
  * assumes that stay optimization is desired; the plan will contain
@@ -658,7 +656,7 @@ Planner.prototype.makePlan = function (sources) {
   return plan;
 }
 
-/**
+/*
  * Extract a plan for resatisfying starting from the output of the
  * given constraints, usually a set of input constraints.
  */
@@ -673,7 +671,7 @@ Planner.prototype.extractPlanFromConstraints = function (constraints) {
   return this.makePlan(sources);
 }
 
-/**
+/*
  * Recompute the walkabout strengths and stay flags of all variables
  * downstream of the given constraint and recompute the actual
  * values of all variables whose stay flag is true. If a cycle is
@@ -702,7 +700,7 @@ Planner.prototype.addPropagate = function (c, mark) {
 }
 
 
-/**
+/*
  * Update the walkabout strengths and stay flags of all variables
  * downstream of the given constraint. Answer a collection of
  * unsatisfied constraints sorted in order of decreasing strength.
@@ -747,7 +745,7 @@ Planner.prototype.addConstraintsConsumingTo = function (v, coll) {
  * P l a n
  * --- */
 
-/**
+/*
  * A Plan is an ordered list of constraints to be executed in sequence
  * to resatisfy all currently satisfiable constraints in the face of
  * one or more changing inputs.
@@ -779,7 +777,7 @@ Plan.prototype.execute = function () {
  * M a i n
  * --- */
 
-/**
+/*
  * This is the standard DeltaBlue benchmark. A long chain of equality
  * constraints is constructed with a stay constraint on one end. An
  * edit constraint is then added to the opposite end and the time is
@@ -820,7 +818,7 @@ function chainTest(n) {
   }
 }
 
-/**
+/*
  * This test constructs a two sets of variables related to each
  * other by a simple linear transformation (scale and offset). The
  * time is measured to change a variable on either side of the

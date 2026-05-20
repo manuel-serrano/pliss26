@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Sep 17 17:23:15 2025                          */
-/*    Last change :  Wed May 20 14:44:53 2026 (serrano)                */
+/*    Last change :  Wed May 20 15:04:53 2026 (serrano)                */
 /*    Copyright   :  2025-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    C implementation                                                 */
@@ -48,7 +48,7 @@ const tagging = <impress.slide title="tagging" class="oopsla25">
 /*---------------------------------------------------------------------*/
 tagging.css = <style>
 .title {
-   margin-bottom: 1ex;
+   margin-bottom: 0.5ex;
 }
 
 div.svgbg {

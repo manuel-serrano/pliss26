@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/benchmark/deltablue.js            */
+/*    serrano/diffusion/talk/pliss26/benchmark/deltablue.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Fri May 28 13:13:47 2021                          */
-/*    Last change :  Sat May 17 08:40:44 2025 (serrano)                */
-/*    Copyright   :  2021-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 15:09:15 2026 (serrano)                */
+/*    Copyright   :  2021-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    JavaScript benchmark deltablue                                   */
 /*=====================================================================*/
@@ -33,9 +33,9 @@ const deltablue = <impress.slide title="Deltablue"
 		     code.style.transform = "scale(1) translate(0, 0)";
 		  }
   		  onstep=~{
-                     let el = document.getElementById("evil-deltablue"); 
+                     let el = document.getElementById("evil-deltablue");
 		     let code = document.getElementById("deltabluejs");
-		     code.style.transform = `scale(2) translate(0, ${10-el.offsetTop}px)`;
+		     code.style.transform = `scale(2) translate(0, ${-el.offsetTop - 10}px)`;
 		  }>
 		  
   <div class="filename">deltablue.js @ octane</div>
