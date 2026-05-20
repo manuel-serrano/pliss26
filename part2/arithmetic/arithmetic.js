@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    .../diffusion/talk/pliss23/part2/arithmetic/arithmetic.js        */
+/*    .../diffusion/talk/pliss26/part2/arithmetic/arithmetic.js        */
 /*    -------------------------------------------------------------    */
 /*    Author      :  manuel serrano                                    */
 /*    Creation    :  Sat Aug 13 15:56:38 2022                          */
-/*    Last change :  Fri Aug 25 08:30:34 2023 (serrano)                */
-/*    Copyright   :  2022-23 manuel serrano                            */
+/*    Last change :  Wed May 20 14:25:17 2026 (serrano)                */
+/*    Copyright   :  2022-26 manuel serrano                            */
 /*    -------------------------------------------------------------    */
 /*    JavaScript Arithmetic                                            */
 /*=====================================================================*/
@@ -23,6 +23,18 @@ import { boxint53 } from "./boxint53.js";
 import { quiz1 } from "./quiz1.js";
 import { quiz2 } from "./quiz2.js";
 import { benchnum } from "./benchnum.js";
+import { self } from "./self.js";
+import { tagging } from "./tagging.js";
+import { flonum } from "./flonum.js";
+import { nan } from "./nan.js";
+import { nun } from "./nun.js";
+import { fst } from "./fst.js";
+import { fl } from "./fl.js";
+import { flc } from "./flc.js";
+import { lowb } from "./lowb.js";
+import { highb } from "./highb.js";
+import { fstimpl } from "./fstimpl.js";
+import { perf } from "./perf.js";
 
 /*---------------------------------------------------------------------*/
 /*    style ...                                                        */
@@ -102,5 +114,6 @@ const style = <style>
 export const arithmetic = [
    <chapter number="5" title=${<span class="care">Arithmetic</span>}></chapter>,
    style, numbers, ieee754, allfloats, nantagging, boxsmi, boxint53, 
-   benchnum, quiz2, quiz1
+   benchnum, quiz2, quiz1,
+   self, tagging, flonum, nan, nun, fst, fl, flc, lowb, highb, fstimpl, perf
 ];

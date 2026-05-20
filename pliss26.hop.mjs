@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 12:03:19 2016                          */
-/*    Last change :  Tue May 19 16:51:13 2026 (serrano)                */
+/*    Last change :  Wed May 20 14:44:40 2026 (serrano)                */
 /*    Copyright   :  2016-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    PLISS26 presentation                                             */
@@ -91,6 +91,7 @@ service pliss26slides(o) {
      <head css=${[fontifier.css,
 		  impress.css,
 		  pliss26.resource("pliss26.hss"),
+		  pliss26.resource("oopsla25.hss"),
 		  pliss26.resource("chapter.hss")]}
            idiom="scheme"
            include="hop-canvas"

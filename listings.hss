@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/listings.hss                      */
+/*    serrano/diffusion/talk/pliss26/listings.hss                      */
 /*    -------------------------------------------------------------    */
 /*    Author      :  manuel serrano                                    */
 /*    Creation    :  Tue May 24 09:02:20 2022                          */
-/*    Last change :  Fri Aug 25 10:44:52 2023 (serrano)                */
-/*    Copyright   :  2022-23 manuel serrano                            */
+/*    Last change :  Wed May 20 14:53:06 2026 (serrano)                */
+/*    Copyright   :  2022-26 manuel serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Listing configuration                                            */
 /*=====================================================================*/
@@ -22,7 +22,7 @@ hopimpress-slide.md pre, .listings {
     margin-right: auto;
     overflow: hidden;
     border: 1px solid #ddd;
-    border-left: 4px;
+    border-left: 4px solid;
     padding: 8px;
     color: black;
 }
