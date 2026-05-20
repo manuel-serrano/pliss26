@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/ho.js                 */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/ho.js                 */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:52:10 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:31:17 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, Scheme compilation                                      */
 /*=====================================================================*/
@@ -24,10 +24,10 @@ import { LSTLISTING } from "../../listings.js";
 export const slide = <impress.slide title="higher order" class="md">
    <MD fontifier=${fontifier}>
    ${<div class="center">How to compile?</div>}
-   ${<div class="center"><code>(lambda (x) (lambda (y) (+ x y)))</code></div>}
+   ${<div class="center"><code>(lambda (x) (lambda (y) (+fx x y)))</code></div>}
 
 ```scheme
-(define adder (lambda (x) (lambda (y) (+ x y))))
+(define adder (lambda (x) (lambda (y) (+fx x y))))
 ;; const adder = x => y => x + y
 
 (define add5 (adder 5))
@@ -59,7 +59,11 @@ code {
 }
 
 pre {
+   width: 95%;
    font-size: 50%;
+   background-color: white;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 p {

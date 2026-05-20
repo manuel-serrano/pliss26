@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/expression.js        */
+/*    serrano/diffusion/talk/pliss26/part1/primer/expression.js        */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:48:46 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:12:47 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -21,7 +21,7 @@ import { MARKDOWN as MD } from "@hop/markdown";
 /*---------------------------------------------------------------------*/
 export const slide = <impress.slide title="Expression based" class="md">
    <MD>
-${<div class="center">Expression based, no statements, everything has a value</div>}
+${<div class="center">Expression based, no statement, everything has a value</div>}
 
 ${<div class="head">5 essential forms:</div>}
 

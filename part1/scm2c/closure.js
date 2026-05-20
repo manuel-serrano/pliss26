@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/closure.js            */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/closure.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:52:20 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:34:19 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, Scheme compilation                                      */
 /*=====================================================================*/
@@ -32,14 +32,14 @@ struct _function {
   obj_t env0;
 }
 
-#define CLOSURE_ENV(clo, i) ((obj_t *)&((c ${">>"} 3)->val.function.env0))[i]
+#define CLOSURE_ENV(clo, i) ((obj_t *)&((c - PTR_TAG)->val.function.env0))[i]
 
-obj_t make_closure(obj_t (*entry)(), long arity, long size) {
+obj_t make_closure(obj_t (*entry)(obj_t, obj_t), long arity, long size) {
   obj_t c = GC_MALLOC(sizeof(enum types) + sizeof(struct _function) + sizeof(obj_t) * (size - 1));
   c->header = FUNCTION;
   c->val.function.arity = arity;
   c->val.function.entry = entry;
-  return c ${"<<"} 3;
+  return c + PTR_TAG;
 }
 
 obj_t adder(obj_t x) {
@@ -50,7 +50,7 @@ obj_t adder(obj_t x) {
 
 obj_t lambda0(obj_t clo, obj_t y) {
   obj_t x = CLOSURE_ENV(clo, 0);
-  return add(x, y);
+  return ADDFX(x, y);
 }
 ```
 
@@ -67,7 +67,9 @@ slide.css = <style>
 }
 
 pre {
-   font-size: 30%;
+   font-size: 28%;
+   background-color: white;
+   padding: 8px;
 }
 
 p {
@@ -78,7 +80,7 @@ p {
    font-weight: bold;
    color: var(--greydark);
    font-size: 110%;
-   margin-bottom: 1ex;
+   margin-bottom: 0.5ex;
 }
 
 div.head {

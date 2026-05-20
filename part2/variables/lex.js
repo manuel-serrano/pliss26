@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part2/variables/lex.js            */
+/*    serrano/diffusion/talk/pliss26/part2/variables/lex.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 11:36:34 2023                          */
-/*    Last change :  Sat May 17 08:30:49 2025 (serrano)                */
-/*    Copyright   :  2023-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 12:08:25 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Let declaration                                                  */
 /*=====================================================================*/
@@ -104,6 +104,11 @@ ul {
 ul ul {
    color: var(--grey);
 }
+
+p {
+   margin: 0;
+}
+
 </style>
 	
 

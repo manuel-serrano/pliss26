@@ -1,5 +1,6 @@
 (module mod
-   (export (class point x::long y::long)
-	   (refY::long ::point)))
+   (export point refY))
 
-(define (refY o) (with-access::point o (y) y))
+(define-class point x::long y::long)
+
+(define (refY::long o::point) (-> o y))

@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:41:22 2015                          */
-/*    Last change :  Tue May 19 16:56:15 2026 (serrano)                */
+/*    Last change :  Wed May 20 12:01:50 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Fonts declarations                                               */
@@ -19,15 +19,14 @@ $(define-hss-function (url-font local remote)
 /*    fonts                                                            */
 /*---------------------------------------------------------------------*/
 @font-face {
-  font-family: 'SpecialElite';
+  font-family: SpecialElite;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Special-Elite.woff"),
-    url("http://themes.googleusercontent.com/static/fonts/specialelite/v3/9-wW4zu3WNoD5Fjka35Jm_n8qdNnd5eCmWXua5W-n7c.woff") format('woff');
+  src: url("fonts/Special-Elite.woff") format('woff');
 }
 
 @font-face {
-  font-family: 'FjallaOne';
+  font-family: FjallaOne;
   font-style: normal;
   font-weight: 400;
   src: url("fonts/FjallaOne.woff"),
@@ -35,7 +34,7 @@ $(define-hss-function (url-font local remote)
 }
 
 @font-face {  
-  font-family: 'ParkAvenue';
+  font-family: ParkAvenue;
   src: url( "fonts/Parkavenue.ttf" ) , local("Parkavenue") , url(  "http://www.free-fonts-ttf.org/true-type-fonts/download.php?image_id=5263" );
 }
 

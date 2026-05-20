@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/lifting.js            */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/lifting.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:52:50 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:46:26 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -44,10 +44,10 @@ obj_t F(obj_t n, obj_t m) {
 }
 
 obj_t lambdaB(obj_t env) {
-  return functionA(CLOSURE_ENV(env, 0)) + CLOSURE_ENV(env, 1);
+   return ADDFX(lambdaA(CLOSURE_ENV(env, 0)), CLOSURE_ENV(env, 1));
 }
 
-obj_t functionA(obj_t n) {
+obj_t lambdaA(obj_t n) {
   return n;
 }
 </lstlisting>
@@ -64,7 +64,7 @@ slide.css = <style>
 }
 
 pre {
-   font-size: 45%;
+   font-size: 40%;
 }
 
 p {
@@ -111,7 +111,7 @@ code {
 .downarrow {
    position: relative;
    left: 1em;
-   top: -0.9ex;
+   top: -0.8ex;
    line-height: 2ex;  
    color: var(--scheme-color);
 }

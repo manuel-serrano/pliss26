@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 10:08:53 2023                          */
-/*    Last change :  Tue May 19 17:24:08 2026 (serrano)                */
+/*    Last change :  Wed May 20 11:19:46 2026 (serrano)                */
 /*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Scheme primer                                                    */
@@ -21,8 +21,8 @@ import { slide as beauty } from "./beauty.js";
 import { slide as sugar } from "./sugar.js";
 import { slide as apply } from "./apply.js";
 import { slide as dsl } from "./dsl.js";
-import { slide as wasm } from "./wasm.js";
 import { slide as macro } from "./macro.js";
+import { slide as wasm } from "./wasm.js";
 import { slide as like } from "./like.js";
 
 /*---------------------------------------------------------------------*/

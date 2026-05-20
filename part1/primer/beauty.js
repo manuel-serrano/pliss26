@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/primer/beauty.js            */
+/*    serrano/diffusion/talk/pliss26/part1/primer/beauty.js            */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:48:56 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:14:24 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -21,7 +21,7 @@ import { MARKDOWN as MD } from "@hop/markdown";
 /*---------------------------------------------------------------------*/
 export const slide = <impress.slide title="Beauty" class="md">
    <MD>
-   ${<div class="center">The (pure) beauty of Scheme</div>}
+   ${<div class="center">The beauty of Scheme</div>}
 
 ${<div class="head center">program &equiv; data</div>}
 
@@ -31,7 +31,7 @@ ${<div class="head center">program &equiv; data</div>}
       * ${<code>[]</code>}
    * constructor
       * `(cons 1 (cons 2 '())`, `'(1 2)`, `(list 1 2)`
-      * ${<code>[].push(2).push(1)</code>}, ${<code>[1, 2]</code>}
+      * ${<code>l = []; l.push(1); l.push(2)</code>}, ${<code>[1, 2]</code>}
    * head
       * `(car '(1 2))` ${<span>&rArr;</span>} `1`
       * ${<code>[1, 2][0]</code>}

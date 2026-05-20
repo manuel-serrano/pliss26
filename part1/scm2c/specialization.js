@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:53:33 2026 (serrano)                */
+/*    Last change :  Wed May 20 11:28:05 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -27,9 +27,10 @@ export const slide = <impress.slide title="Specialization" class="md">
    * unsafe, unbounded arithmetic
    * `+`, `+fx`, `+bx`, `+fl`, ..., `-`, `-fx`, `-bx`, `-fl`, ...
    * use C macros to avoid function calls
+   * trade size for efficiency (e.g., 61 bits)
    * use tagging (_vs boxing_)
 
-<span step="4"/>
+<span step="5"/>
 </MD>   
 </impress.slide>
 

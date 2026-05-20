@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part2/title.js                    */
+/*    serrano/diffusion/talk/pliss26/part2/title.js                    */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Sat May 17 08:25:38 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 20 11:56:17 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23 par 2 title                                              */
 /*=====================================================================*/
@@ -42,6 +42,7 @@ JavaScript
 title.css = <style>
 ul {
    font-weight: bold;
+   font-size: 95%;
 }
 
 em {
@@ -52,5 +53,10 @@ em {
 strong { 
    color: var(--red);
 }
+
+p {
+   margin: 0;
+}
+
 </style>;
       

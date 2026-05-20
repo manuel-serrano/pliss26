@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:06:52 2026 (serrano)                */
+/*    Last change :  Wed May 20 11:08:41 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -34,7 +34,7 @@ ${<div class="center">Close to the untyped ${<span>&lambda;</span>}-calculus</di
       * `M(N)`
    * alpha-conversion: ${<span class="math">&lambda;x.M[x] &equiv; &lambda;y.M[y]</span>}
    * beta-reduction: ${<span class="math">((&lambda;x.M) E) &equiv; (M[x := E])</span>}
-   * eta-conversion: ${<span class="math">((&lambda;x.M x) E) &equiv; M if x free in M</span>}
+   * eta-conversion: ${<span class="math">(&lambda;x.M x) &equiv; M if x free in M</span>}
 </MD>   
 </impress.slide>
 

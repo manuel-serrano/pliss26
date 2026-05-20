@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:38:35 2026 (serrano)                */
+/*    Last change :  Wed May 20 11:20:49 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -28,7 +28,7 @@ export const slide = <impress.slide title="Like" class="md">
    * minimalist core language
    * beauty of the core concepts
    * clean semantics
-   * _untypedness_
+   * "_untypedness_" (optional/gradual types)
 
 <span step="5"/>
 </MD>   
