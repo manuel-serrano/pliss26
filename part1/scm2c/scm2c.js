@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/scm2c.js              */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/scm2c.js              */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 10:08:53 2023                          */
-/*    Last change :  Fri Aug 25 12:00:11 2023 (serrano)                */
-/*    Copyright   :  2023 Manuel Serrano                               */
+/*    Last change :  Wed May 27 06:42:14 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Scheme primer                                                    */
 /*=====================================================================*/
@@ -33,6 +33,6 @@ import { slide as lifting } from "./lifting.js";
 export const scm2c = [
    <chapter number="2" title=${<span class="care">Scheme->C</span>}/>,
    challenges,
-   polymorphism, boxing, fixnum, slowfixnum, specialization, fx, bib,
+   polymorphism, boxing, fixnum, slowfixnum, specialization, fx,
    ho, closure, cloalloc, nontail, lifting
 ];

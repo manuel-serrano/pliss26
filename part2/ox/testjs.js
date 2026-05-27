@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part2/ox/testjs.js                */
+/*    serrano/diffusion/talk/pliss26/part2/ox/testjs.js                */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 11:36:34 2023                          */
-/*    Last change :  Sat May 17 08:32:37 2025 (serrano)                */
-/*    Copyright   :  2023-25 Manuel Serrano                            */
+/*    Last change :  Wed May 27 08:04:41 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    A slide                                                          */
 /*=====================================================================*/
@@ -20,7 +20,7 @@ import { LSTINPUTLISTING } from "../../listings.js";
 /*---------------------------------------------------------------------*/
 /*    testjs                                                           */
 /*---------------------------------------------------------------------*/
-export const testjs = <impress.slide title="o.x (JavaScript)">
+export const testjs = <impress.slide title="o.x (cache-hit)">
   <div class="js code">
     <lstinputlisting language="javascript" src=${require.resolve("./src/cache-hit.js")}/>
    </div>

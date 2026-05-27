@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/config.js                         */
+/*    serrano/diffusion/talk/pliss26/config.js                         */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 15:39:31 2015                          */
-/*    Last change :  Fri May 16 10:16:38 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Wed May 27 06:21:17 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    HOPJS talk configuration                                         */
 /*=====================================================================*/
@@ -24,7 +24,7 @@ export { inriaSVG };
 export const ROOT = path.dirname( module.filename );
 const inriaSVG = path.join( ROOT, "svg/inria.svgz" );
 
-export const name = "PLISS23";
+export const name = "PLISS26";
 export const slideWidth = 1920, slideHeight = 1080;
 
 export const theme = path.join( ROOT, "themes/grey.json" );

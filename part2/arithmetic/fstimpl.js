@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  manuel serrano                                    */
 /*    Creation    :  Tue Oct 21 12:52:21 2025                          */
-/*    Last change :  Wed May 20 14:54:15 2026 (serrano)                */
+/*    Last change :  Wed May 27 08:23:51 2026 (serrano)                */
 /*    Copyright   :  2025-26 manuel serrano                            */
 /*    -------------------------------------------------------------    */
 /*    FST implementation                                               */
@@ -31,7 +31,7 @@ const fstimpl = <impress.slide title="High bit implementation" class="oopsla25">
    </div>
 
    <div class="rotation center" step="1-">
-      <span class="important">&#8634;</span> 59 bits left rotation
+      <span class="important">&#8634;</span> 59 bits right rotation
    </div>
    
 

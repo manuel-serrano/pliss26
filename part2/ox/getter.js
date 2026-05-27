@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part2/ox/getter.js                */
+/*    serrano/diffusion/talk/pliss26/part2/ox/getter.js                */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 11:36:34 2023                          */
-/*    Last change :  Sat May 17 08:32:50 2025 (serrano)                */
-/*    Copyright   :  2023-25 Manuel Serrano                            */
+/*    Last change :  Wed May 27 06:54:19 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    A slide                                                          */
 /*=====================================================================*/
@@ -59,7 +59,7 @@ div[data-step="2"] {
 }
 
 div[data-step="4"] {
-   top: -25ex;
+   top: -22ex;
 }
 
 pre {

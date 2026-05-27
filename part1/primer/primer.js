@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 10:08:53 2023                          */
-/*    Last change :  Wed May 20 11:19:46 2026 (serrano)                */
+/*    Last change :  Wed May 27 06:32:32 2026 (serrano)                */
 /*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Scheme primer                                                    */
@@ -33,5 +33,5 @@ export const primer = [
       Primer
    </chapter>,
    implementations, syntax, church, expression, beauty, sugar, apply,
-   dsl, wasm, macro, like
+   dsl, macro, wasm, like
 ];

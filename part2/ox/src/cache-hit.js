@@ -3,7 +3,7 @@ function readX(o) {
 }
 
 function test(count, N) {
-   let os = [#icache-object#{ x: 12, y: 123, z: 45 }#/icache-object#, { x: 21, y: 31 }];
+   let os = [#icache-object#{ x: 12, y: 123, z: 45 }#/icache-object#, { x: 21, y: 31, z: 78 }];
    let s = 0;
 
    for (let i = 0; i < count; i++) {

@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part2/ox/poly.js                  */
+/*    serrano/diffusion/talk/pliss26/part2/ox/poly.js                  */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Tue Aug 22 11:36:34 2023                          */
-/*    Last change :  Sat May 17 08:33:15 2025 (serrano)                */
-/*    Copyright   :  2023-25 Manuel Serrano                            */
+/*    Last change :  Wed May 27 06:55:33 2026 (serrano)                */
+/*    Copyright   :  2023-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    A slide                                                          */
 /*=====================================================================*/
@@ -62,7 +62,7 @@ div[data-step="4"] {
 }
 
 div[data-step="6"] {
-   top: -24ex;
+   top: -22ex;
 }
 
 pre {

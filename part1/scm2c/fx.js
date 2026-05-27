@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:57:41 2026 (serrano)                */
+/*    Last change :  Wed May 27 06:41:24 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -32,8 +32,6 @@ export const slide = <impress.slide title="Tagging Fixnums, a case study " class
 #define ADDFX(n, m) (n+m)
 
 #define FLP(o) (((o & 7) == 1) && (o ${">>"} 3)-${">"}header == FLONUM)
-// or, if you play with bit patterns...
-#define FLP(o) ((o & 7) == 2)
 ```
 
 </MD>   
