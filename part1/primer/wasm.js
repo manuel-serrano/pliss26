@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  manuel serrano                                    */
 /*    Creation    :  Tue May 19 17:24:42 2026                          */
-/*    Last change :  Tue May 19 17:36:40 2026 (serrano)                */
+/*    Last change :  Wed May 27 08:33:16 2026 (serrano)                */
 /*    Copyright   :  2026 manuel serrano                               */
 /*    -------------------------------------------------------------    */
 /*    wasm                                                             */
@@ -21,7 +21,7 @@ import { MARKDOWN as MD } from "@hop/markdown";
 /*---------------------------------------------------------------------*/
 export const slide = <impress.slide title="Wasm" class="md">
 <MD fontifier=${fontifier}>
-   ${<div class="center">A perfect fit for Wasm</div>}
+   ${<div class="center">A perfect fit for Wasm...</div>}
 
   * A Wasm file 
 ```scheme

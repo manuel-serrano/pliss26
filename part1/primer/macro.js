@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Tue May 19 17:37:21 2026 (serrano)                */
+/*    Last change :  Thu May 28 06:41:21 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -58,6 +58,10 @@ div[data-step="1"] {
 pre {
    font-size: 50%;
    background-color: white;
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 8px;
 }
 
 p {

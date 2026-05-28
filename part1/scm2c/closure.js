@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Wed May 27 06:43:49 2026 (serrano)                */
+/*    Last change :  Thu May 28 06:53:17 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, Scheme compilation                                      */
@@ -39,7 +39,7 @@ obj_t make_closure(obj_t (*entry)(obj_t, obj_t), long arity, long size) {
   c->header = FUNCTION;
   c->val.function.arity = arity;
   c->val.function.entry = entry;
-return (obj_t)((long)c + PTR_TAG);
+  return (obj_t)((long)c + PTR_TAG);
 }
 
 obj_t adder(obj_t x) {

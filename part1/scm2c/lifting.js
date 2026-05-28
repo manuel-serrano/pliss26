@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Wed May 20 11:46:26 2026 (serrano)                */
+/*    Last change :  Thu May 28 06:57:45 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -26,10 +26,13 @@ export const slide = <impress.slide title="Lambda Lifting">
 
 <lstlisting language="scheme">
 (define (F n m)
-   (define (A)
-      n)
+    
+  (define (A)
+     n)
+ 
   (define (B)
-      (+fx (A) m))
+     (+fx (A) m))
+ 
   (G B))
 </lstlisting>
 <div class="downarrow" step="1">&#129175;</div>

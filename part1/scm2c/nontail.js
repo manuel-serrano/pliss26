@@ -3,7 +3,7 @@
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Wed May 20 11:44:24 2026 (serrano)                */
+/*    Last change :  Thu May 28 06:57:00 2026 (serrano)                */
 /*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
@@ -26,6 +26,7 @@ export const slide = <impress.slide title="Non tail calls">
 
 <lstlisting language="scheme">
 (define (copy o)
+
    (define (copy-vec)
       (let ((r (make-vector (vector-length o))))
          (let loop ((i (-fx (vector-length o) 1)))
@@ -34,11 +35,13 @@ export const slide = <impress.slide title="Non tail calls">
                 (begin
                    (vector-set! r i (vector-ref o i))
                    (loop (-f xi 1)))))))
+ 
    (define (copy-pair)
       (let loop ((o o))
          (if (null? o)
              o
-             (cons (car o) (loop (cdr o))))))
+            (cons (car o) (loop (cdr o))))))
+ 
    (if (vector? o)
        (copy-vec)
        (copy-pair)))
@@ -80,7 +83,7 @@ slide.css = <style>
 }
 
 div[data-step="2"] {
-   top: -20ex;
+   top: -23ex;
 }
 
 pre {

@@ -1,10 +1,10 @@
 /*=====================================================================*/
-/*    serrano/diffusion/talk/pliss23/part1/scm2c/cloalloc.js           */
+/*    serrano/diffusion/talk/pliss26/part1/scm2c/cloalloc.js           */
 /*    -------------------------------------------------------------    */
 /*    Author      :  Manuel Serrano                                    */
 /*    Creation    :  Wed Oct 14 14:24:34 2015                          */
-/*    Last change :  Thu May 15 16:52:33 2025 (serrano)                */
-/*    Copyright   :  2015-25 Manuel Serrano                            */
+/*    Last change :  Thu May 28 06:55:39 2026 (serrano)                */
+/*    Copyright   :  2015-26 Manuel Serrano                            */
 /*    -------------------------------------------------------------    */
 /*    Pliss23, part 1 title                                            */
 /*=====================================================================*/
@@ -26,18 +26,21 @@ export const slide = <impress.slide title="Closure Allocation">
 
 <lstlisting language="scheme">
 (define (sum o)
+    
   (define (sum-vec)
     (let loop ((i (-fx (vector-length o) 1))
                (s 0))
        (if (${"<"}fx i 0)
 	   s
-	   (loop (-fx i 1) (+fx (vector-ref o i) s)))))
+	  (loop (-fx i 1) (+fx (vector-ref o i) s)))))
+ 
   (define (sum-pair)
      (let loop ((o o)
 	        (s 0))
        (if (null? o)
 	   s
            (loop (cdr o) (+fx (car o) s)))))
+ 
   (if (vector? o)
       (sum-vec)
       (sum-pair)))
@@ -87,7 +90,7 @@ div[data-step="1"] div[xstep="2"] {
 }
    
 div[data-step="2"], div[data-step="1"] {
-   top: -19ex;
+   top: -22ex;
 }
 
 pre {
